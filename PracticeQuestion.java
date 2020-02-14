@@ -40,11 +40,12 @@ public class PracticeQuestion {
 			positions.add(i);
         }
  
-//		EDGE CASE: when total pizza is less than required
+//		EDGE CASE: when total avaliable pizza is less than required pizza
         if(sum <= maxPizza){
-            String firstLineOutput = String.valueOf(sum);
+            String firstLineOutput = String.valueOf(positions.size());
 			String secondLineOutput = String.valueOf(positions.stream().map(String::valueOf).collect(Collectors.joining(" ")));
 
+			System.out.println(String.valueOf(sum));
 			System.out.println(firstLineOutput);
 			System.out.println(secondLineOutput);
 			
